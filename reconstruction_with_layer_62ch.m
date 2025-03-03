@@ -54,7 +54,7 @@ W2bsi=rand(ohl,hln);
 W2bs=W2bsr+1i*W2bsi;
 ahbs = 0.5;
 aobs=0.5;
-etaW1bs = 0.001;
+etaW1bs = 0.001;  % learning rate 
 etaW2bs = 0.001;
 
  nepochsbs = 5000; %no of epochs
