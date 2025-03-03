@@ -1,4 +1,6 @@
-	Hidden layer equation
+Instruction:1st run the code (eeg_48ch_wake_combined.m) with nearbyA.m function loaded in the same directory, with a sample time series (For example:   eeg_nrem_n3_all_ch.mat). Then network will learn frequency of oscillator. Also angle of lateral connection will be trained in this phase. Then store the updated frequency and phase values (angle of lateral conncetion) for further use.
+ 
+ Hidden layer equation
 (learning rates:   η_h  =0.001; η_o  =0.001).
 (r_i ) ̇=(μ+〖〖βr〗_i〗^2 ) r_i+∑_(j=1     ∋ j≠i)^N▒〖A_ij r_j^(ω_i/ω_j ) cos ω_i (θ_j/ω_j -θ_i/ω_i +Ø_ij/(ω_i ω_j )) 〗          		(5)  
 θ ̇_i=ω_i+∑_(j=1     ∋ j≠i)^N▒〖A_ij  (r_j^(ω_i/ω_j ))/r_i 〗 □(sin ω_i (θ_j/ω_j -θ_i/ω_i +Ø_ij/(ω_i ω_j )) )                 			(6)
