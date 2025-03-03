@@ -3,14 +3,14 @@ clear all
 close all
 fs=500;
 dt = 1/fs;
-n = 200;   
-nepochs = 30; 
-eta_omega = 0.0001; 
-eta_alpha = 0.0001; 
-eta_W = 0.0001;
+n = 200;   % number of oscillator
+nepochs = 30;  % epoch to train
+eta_omega = 0.0001; % learning rate of frequency training
+eta_alpha = 0.0001;  % learning rate for real amplitude training
+eta_W = 0.0001;  % coefficient of lateral conncetion
 eps = 0.5;  
 eps_w = 0.001;
-beta1=-20;
+beta1=-20;  % oscillator bifurcation parameter
 %%
 tmpa = (2*pi*rand(n,1));
 S = exp(1i*tmpa);
